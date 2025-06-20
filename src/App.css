@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
-}
+/* App.css - Real Website Style */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+  color: #f1f1f1;
+  font-family: 'Segoe UI', 'Poppins', sans-serif;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+a {
+  text-decoration: none;
+  color: #00f2ff;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+label {
+  color: #f1f1f1;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="file"],
+textarea,
+select {
+  background-color: #222831;
+  color: #f1f1f1;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+input::file-selector-button {
+  background-color: #00adb5;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #ff6e7f;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff4757;
+  transform: scale(1.05);
+}
+
+.card {
+  background: #1a1a2e;
+  color: #f1f1f1;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6);
+}
+
+.card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.modal-content {
+  background: #2a2a72;
   color: white;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.carousel .carousel-item img {
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 10px;
 }
